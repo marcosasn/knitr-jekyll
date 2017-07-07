@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Problema 1 - Checkpoint 4
-date: 2017-07-05 22:23:45
+date: 2017-07-07 09:56:32
 published: true
 tags: [htmlwidgets, r]
 author: Marcos Antonio Silva Nascimento (marcos.nascimento@ccc.ufcg.edu.br)
@@ -687,6 +687,7 @@ labs(title = "Distribuicao da classificacao ao longo das temporadas", x="Episodi
 {% endhighlight %}
 
 ![plot of chunk unnamed-chunk-39](/knitr-jekyll-ad1figure/source/postagem-prob1/2017-07-05-postagem-prob1/unnamed-chunk-39-1.png)
+
 O episodio de 13 Reasons Why mais bem avaliados foi o episodios 13 da primeira temporada e o menos avaliado foi o episodio 3 da mesma temporada como podemos ver no grafico abaixo. Quanto a diferenca pode-se dizer que a diferenca razoavelmente grande, o episodio 13 teve avaliacao proxima a 10 enquanto o episodio 3 teve avaliacao proxima de 8.2(diferenca de quase 2 pontos). 
 
 {% highlight r %}
@@ -699,6 +700,7 @@ dados %>%  filter(series_name == "13 Reasons Why") %>%
 {% endhighlight %}
 
 ![plot of chunk unnamed-chunk-40](/knitr-jekyll-ad1figure/source/postagem-prob1/2017-07-05-postagem-prob1/unnamed-chunk-40-1.png)
+
 Conclusao: Como podemos ver o primeiro episodio de cada uma das series nao e o mais bem avaliado e apenas as series 13 Reasons Why e Black Mirror tiveram o episodio menos bem avaliado no decorrer da temporada.
 
 Nova pergunta: Para as series que possuem mais de uma temporada, a avaliacao dos episodios de uma nova temporada cresceu ou decresceu quando comparados a avaliacao dos episodios da temporada anterior?
@@ -722,6 +724,7 @@ dados %>%
 {% endhighlight %}
 
 ![plot of chunk unnamed-chunk-41](/knitr-jekyll-ad1figure/source/postagem-prob1/2017-07-05-postagem-prob1/unnamed-chunk-41-1.png)
+
 Olhando para o grafico acima fica facil observar se a avaliacao dos episodios da nova temporada cresce ou decresce quando comparados a temporada anterior. Black Mirror apresenta uma variacao da avaliacao dos episodios com o passar das temporadas mas fica dificil afirmar com precisao se a avaliacao dos episodios cresceu ou decresceu.
 
 Observando Sense8 podemos observar um crescimento da avaliacao dos episodios.
@@ -735,6 +738,7 @@ dados %>%  filter(series_name == "Black Mirror") %>%
 {% endhighlight %}
 
 ![plot of chunk unnamed-chunk-42](/knitr-jekyll-ad1figure/source/postagem-prob1/2017-07-05-postagem-prob1/unnamed-chunk-42-1.png)
+
 Observando o grafico acima fica facil perceber como se comporta a avaliacao dos episodios com o passar das temporadas de Black Mirror. Percebe-se claramente que a serie mantem a avaliacao dos episodios se utilizamos a mediana para comparar cada temporada. Ou seja, a serie manteve a avaliacao dos episodios.
 
 {% highlight r %}
@@ -746,6 +750,7 @@ dados %>%  filter(series_name == "Sense8") %>%
 {% endhighlight %}
 
 ![plot of chunk unnamed-chunk-43](/knitr-jekyll-ad1figure/source/postagem-prob1/2017-07-05-postagem-prob1/unnamed-chunk-43-1.png)
+
 Observando o grafico acima fica facil perceber como se comporta a avaliacao dos episodios com o passar das temporadas de Sense8. Percebe-se claramente o crescimento da avaliacao dos episodios se utilizamos a mediana para comparar cada temporada. Ou seja, houve um crescimento da avaliacao dos episodios.
 
 Respondendo a pergunta: a avaliacao dos episodios das novas temporadas de Black Mirror foi mantida variando sob uma razao de decimos, ja a avaliacao dos episodios da nova temporada de Sense8 houve um crescimento quando comparados a avaliacao dos episodios da temporada anterior.
