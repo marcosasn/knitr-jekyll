@@ -4,8 +4,8 @@ title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
+Este portfólio foi desenvolvido para permitir a aprendizagem de frameworks de geração de blogs automáticos e para disseminar os relatórios produzidos no decorrer do curso de Análise de Dados I da Universidade Federal de Campina Grande (UFCG).
 
-You can find the source code for the Jekyll new theme at: [github.com/jglovier/jekyll-new](https://github.com/jglovier/jekyll-new)
+Você pode encontrar mais códigos de Análise de Dados I visitando a minha conta do Github em:[https://github.com/marcosasn](https://github.com/marcosasn)
 
-You can find the source code for Jekyll at [github.com/jekyll/jekyll](https://github.com/jekyll/jekyll)
+Você pode também me contactar pelos meus principais endereços de e-mail: [marcos.nascimento@ccc.ufcg.edu.br](marcos.nascimento@ccc.ufcg.edu.br) e [marcosnascimennto@gmail.com](marcosnascimennto@gmail.com)

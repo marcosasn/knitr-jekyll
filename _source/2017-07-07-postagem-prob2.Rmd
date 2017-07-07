@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Problema 2 - Checkpoint 1"
+title: "Black Mirror ou Sense8?"
 date: `r Sys.time()`
 published: true
 tags: [htmlwidgets, r]
@@ -13,8 +13,7 @@ knitr::opts_chunk$set(fig.width=8, fig.height=6)
 #devtools::install_github('hadley/ggplot2')
 ```
 
-# Revisitando uma visualização sua
-## Black Mirror x Sense8
+# Black Mirror ou Sense8?
 ```{r, echo=FALSE, message=FALSE}
 library("dplyr")
 library("tidyr")
@@ -61,4 +60,4 @@ Utilizando a mediana como métrica de comparação percebe-se claramente que Bla
 
 Podemos concluir que a avaliação dos episódios das novas temporadas de Black Mirror foi mantida enquanto a avaliação dos episódios da nova temporada de Sense8 foi acrescida.
 
-Copyright © 2017 [Marcos Nascimento](http://https://github.com/marcosasn/AD1/tree/master/problema1/R)
+Copyright © 2017 [Marcos Nascimento](https://github.com/marcosasn/AD1/blob/master/problema2/R/prob2_cpoint1.Rmd)

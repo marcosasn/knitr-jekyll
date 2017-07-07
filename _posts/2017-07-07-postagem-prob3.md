@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Problema 3 - Checkpoint 1"
-date: 2017-07-07 10:51:11
+title: "Tipos de filme de Lindsay Lohan"
+date: 2017-07-07 16:50:03
 published: true
 tags: [htmlwidgets, r]
 author: Marcos Antonio Silva Nascimento (marcos.nascimento@ccc.ufcg.edu.br)
@@ -386,3 +386,5 @@ Observando o gráfico acima parece que esta escolha agrupa um filme em um agrupa
 O ideal é realizar a normalização com transformação da variável bilheteria. Uma escolha dos grupos poderia ser 4. Esta escolha agruparia os filmes da atriz sem prejuízo de informação. Os nomes para os grupos seriam: os **piores filmes**, os **filmes medianos**, os **filmes que você deveria ver** e os **melhores filmes**.
 
 Os **piores filmes** são aqueles que não fizeram sucesso de público e nem foram bem avaliados (por ex. InAPPropriate Comedy). Os **filmes medianos** são aqueles que tiveram um sucesso considerável de público e ainda assim não foram bem avaliados (por ex. The Canyons). Os **filmes que você deveria ver** aqueles filmes que foram bem avaliados mas não tiveram sucesso de público (por ex. Love, Marilyn) e os **melhores filmes** aqueles que tiveram sucesso de público e de avaliação (por ex. Mean Girls).
+
+Copyright © 2017 [Marcos Nascimento](https://github.com/marcosasn/AD1/blob/master/problema3/R/prob3_cpoint1.Rmd)
