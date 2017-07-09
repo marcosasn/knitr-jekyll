@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Black Mirror ou Sense8?"
-date: 2017-07-09 08:05:24
+date: 2017-07-09 10:20:21
 published: true
 tags: [htmlwidgets, r]
 author: Marcos Antonio Silva Nascimento (marcos.nascimento@ccc.ufcg.edu.br)
@@ -19,7 +19,7 @@ Para responder essa pergunta vamos olhar para o gráfico que representa a curva 
 ## Warning: Ignoring unknown aesthetics: text
 {% endhighlight %}
 
-![plot of chunk unnamed-chunk-2](/knitr-jekyll-ad1/figure/source/2017-07-07-postagem-prob2/unnamed-chunk-2-1.png)
+![plot of chunk unnamed-chunk-2](/knitr-jekyll-ad1figure/source/2017-07-07-postagem-prob2/unnamed-chunk-2-1.png)
 
 Black Mirror apresenta uma variação considerável da avaliação dos episódios se comparada a série Sense8, além disso, esta também apresenta uma curva crescente.
 
@@ -29,7 +29,7 @@ Precisamente a avaliação dos episódios cresceu ou decresceu ao longo de cada 
 ## Warning: Ignoring unknown aesthetics: text
 {% endhighlight %}
 
-![plot of chunk unnamed-chunk-3](/knitr-jekyll-ad1/figure/source/2017-07-07-postagem-prob2/unnamed-chunk-3-1.png)
+![plot of chunk unnamed-chunk-3](/knitr-jekyll-ad1figure/source/2017-07-07-postagem-prob2/unnamed-chunk-3-1.png)
 
 
 Utilizando a mediana como métrica de comparação percebe-se claramente que Black Mirror mantém a avaliação dos episódios(variação em termos de décimos). Percebe-se também o crescimento da avaliação dos episódios de Sense8.

@@ -2,7 +2,7 @@
 layout: post
 title: "Tipos de filme de Hollywood quanto ao gênero"
 author: Marcos Antonio Silva Nascimento (marcos.nascimento@ccc.ufcg.edu.br)
-date: 2017-07-09 08:01:03
+date: 2017-07-09 10:21:37
 published: true
 tags: [htmlwidgets, r]
 ---
@@ -218,7 +218,7 @@ dw %>%
   theme(plot.title = element_text(hjust = 0.5))
 {% endhighlight %}
 
-![plot of chunk unnamed-chunk-2](/knitr-jekyll-ad1/figure/source/2017-07-07-postagem-prob3_cp2/unnamed-chunk-2-1.png)
+![plot of chunk unnamed-chunk-2](/knitr-jekyll-ad1figure/source/2017-07-07-postagem-prob3_cp2/unnamed-chunk-2-1.png)
 
 Na diagonal do gráfico acima podemos observar a distribuição de cada uma das dimensões submetidas a análise. De primeira já podemos observar um viesamento dos dados a esquerda. Isto impede ver melhor a magnitude dos valores porque eles acabam se concentrando à esquerda do gráfico. De ante mão já podemos identificar que o número de homens nos filmes é ligeiramente maior que o número de mulheres. Isto fica ainda mais evidente no sumário dos dados abaixo, em termos de mediana, o número de homens nos filmes é duas vezes maior que o número de mulheres.
 
@@ -260,7 +260,7 @@ dw2 %>%
   theme(plot.title = element_text(hjust = 0.5))
 {% endhighlight %}
 
-![plot of chunk unnamed-chunk-4](/knitr-jekyll-ad1/figure/source/2017-07-07-postagem-prob3_cp2/unnamed-chunk-4-1.png)
+![plot of chunk unnamed-chunk-4](/knitr-jekyll-ad1figure/source/2017-07-07-postagem-prob3_cp2/unnamed-chunk-4-1.png)
 
 As conclusões sobre a figura acima são quase as mesmas para a figura da seção anterior mas a atenção se volta parar o gráfico de mediana de palavras das mulheres e a mediana de palavras dos homens. Na seção anterior percebemos que as mulheres falavam mais palavras do que os homens apesar de o número de mulheres ser duas vezes menor do que o número de homens, neste gráfico vemos que esta diferença é quase imperceptível. Isto fica ainda mais evidente no sumário de dados abaixo.
 
@@ -299,7 +299,7 @@ dw2.scaled %>%
   theme(plot.title = element_text(hjust = 0.5))
 {% endhighlight %}
 
-![plot of chunk unnamed-chunk-6](/knitr-jekyll-ad1/figure/source/2017-07-07-postagem-prob3_cp2/unnamed-chunk-6-1.png)
+![plot of chunk unnamed-chunk-6](/knitr-jekyll-ad1figure/source/2017-07-07-postagem-prob3_cp2/unnamed-chunk-6-1.png)
 
 O comportamento da distribuição de cada uma dimensão agora está em torno da distribuição normal com média zero. Como podemos observar nos gráficos acima e no sumário abaixo a média de cada dimensão é zero (própria da distribuição normal com média zero) e os demais valores são distanciamentos da média. Isto facilitará a análise dos gráficos de agrupamento nas seções posteriores.
 
@@ -385,7 +385,7 @@ explorando_k %>%
     geom_point()
 {% endhighlight %}
 
-![plot of chunk unnamed-chunk-8](/knitr-jekyll-ad1/figure/source/2017-07-07-postagem-prob3_cp2/unnamed-chunk-8-1.png)
+![plot of chunk unnamed-chunk-8](/knitr-jekyll-ad1figure/source/2017-07-07-postagem-prob3_cp2/unnamed-chunk-8-1.png)
 
 Observando o gráfico acima fica fácil perceber que o melhor valor de k seria 4, já que, apartir de 4 betweenss começa a parar de crescer. O ponto k=4 é também conhecido como joelho da curva.
 
@@ -417,7 +417,7 @@ dw2.scaled.km.long %>%
   theme(plot.title = element_text(hjust = 0.5))
 {% endhighlight %}
 
-![plot of chunk unnamed-chunk-9](/knitr-jekyll-ad1/figure/source/2017-07-07-postagem-prob3_cp2/unnamed-chunk-9-1.png)
+![plot of chunk unnamed-chunk-9](/knitr-jekyll-ad1figure/source/2017-07-07-postagem-prob3_cp2/unnamed-chunk-9-1.png)
 
 {% highlight r %}
 #autoplot(km, data = dw2.scaled, label = TRUE)
@@ -446,7 +446,7 @@ dw2.scaled.km.long %>%
   theme(plot.title = element_text(hjust = 0.5))
 {% endhighlight %}
 
-![plot of chunk unnamed-chunk-10](/knitr-jekyll-ad1/figure/source/2017-07-07-postagem-prob3_cp2/unnamed-chunk-10-1.png)
+![plot of chunk unnamed-chunk-10](/knitr-jekyll-ad1figure/source/2017-07-07-postagem-prob3_cp2/unnamed-chunk-10-1.png)
 
 O grupo 1 é caracterizado por conter mais personagens do sexo masculino do que personagens do sexo feminino embora a quantidade de palavras ditas pelas mulheres seja maior do que a quantidade de palavras ditas por homens. Estes filmes poderiam fazer referência aqueles voltados para o público feminino já que as mulheres parecem protagonizar cada um deles. Um nome para este grupo seria **filmes femininos**, como exemplo posso citar o filme Pretty Woman.
 
@@ -463,7 +463,7 @@ dw2.scaled.km.long %>%
   theme(plot.title = element_text(hjust = 0.5))
 {% endhighlight %}
 
-![plot of chunk unnamed-chunk-11](/knitr-jekyll-ad1/figure/source/2017-07-07-postagem-prob3_cp2/unnamed-chunk-11-1.png)
+![plot of chunk unnamed-chunk-11](/knitr-jekyll-ad1figure/source/2017-07-07-postagem-prob3_cp2/unnamed-chunk-11-1.png)
 
 O grupo 2 é caracterizado por conter mais personagens do sexo feminino do que personagens do sexo masculino embora os personagens do sexo masculino falem mais do que os personagens do sexo feminino. Estes filmes poderiam fazer referência aqueles voltados para o público masculino já os homens parecem protagonizar cada um deles. Um nome para este grupo seria **filmes masculinos**, como exemplo posso citar o filme Angels & Demons.
 
@@ -480,7 +480,7 @@ dw2.scaled.km.long %>%
   theme(plot.title = element_text(hjust = 0.5))
 {% endhighlight %}
 
-![plot of chunk unnamed-chunk-12](/knitr-jekyll-ad1/figure/source/2017-07-07-postagem-prob3_cp2/unnamed-chunk-12-1.png)
+![plot of chunk unnamed-chunk-12](/knitr-jekyll-ad1figure/source/2017-07-07-postagem-prob3_cp2/unnamed-chunk-12-1.png)
 
 O grupo 3 é caracterizado por conter mais personagens do sexo feminino do que por personagens de sexo masculino embora ambos os sexos falem a mesma quantidade de palavras. Estes filmes poderiam fazer referência aqueles que buscam evidenciar a imagem e o poder da mulher já que as mulheres parecem ser maioria em cada um deles. Um nome para este grupo seria **filmes feministas**, como exemplo posso citar o filme Final Destination 2.
 
@@ -497,7 +497,7 @@ dw2.scaled.km.long %>%
   theme(plot.title = element_text(hjust = 0.5))
 {% endhighlight %}
 
-![plot of chunk unnamed-chunk-13](/knitr-jekyll-ad1/figure/source/2017-07-07-postagem-prob3_cp2/unnamed-chunk-13-1.png)
+![plot of chunk unnamed-chunk-13](/knitr-jekyll-ad1figure/source/2017-07-07-postagem-prob3_cp2/unnamed-chunk-13-1.png)
 
 O grupo 4 é caracterizado por conter mais personagens do sexo masculino do que personagens do sexo feminino. Neste grupo os homens falaram maiores quantidades de palavras do que as mulheres. Estes filmes poderiam fazer referência aqueles que buscam evidenciar a imagem e o poder do homem. Um nome para este grupo seria **filmes machistas**, como exemplo posso citar o filme Freddy vs. Jason.
 
@@ -524,7 +524,7 @@ p <- km %>%
 p
 {% endhighlight %}
 
-![plot of chunk unnamed-chunk-14](/knitr-jekyll-ad1/figure/source/2017-07-07-postagem-prob3_cp2/unnamed-chunk-14-1.png)
+![plot of chunk unnamed-chunk-14](/knitr-jekyll-ad1figure/source/2017-07-07-postagem-prob3_cp2/unnamed-chunk-14-1.png)
 
 Ainda é possível interagir com o mesmo mudando a disposição dos eixos e dos grupos que são apresentados.
 
