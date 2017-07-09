@@ -87,7 +87,7 @@ dados %>%
   labs(title = "Distribuicao da classificacao do usuario", x="Nome da serie", y="Classificacao do usuario")
 {% endhighlight %}
 
-![plot of chunk unnamed-chunk-2](/knitr-jekyll-ad1figure/source/2017-07-05-postagem-prob1/unnamed-chunk-2-1.png)
+![plot of chunk unnamed-chunk-2](/knitr-jekyll-ad1/figure/source/2017-07-05-postagem-prob1/unnamed-chunk-2-1.png)
 
 Podemos perceber que segundo a distribuicao da classificacao de usuarios no grafico acima, Sense8 tem apenas um valor estranho(~7.5). Existe variacao e entre os valores frequentes tem-se a classificacao 9. Isto fica claro se observarmos o histograma logo abaixo com a contagem de frequencia das classificacoes.
 
@@ -100,7 +100,7 @@ dados %>%
   labs(title = "Histograma da classificacao do usuario", x="Classificacao do usuario", y = "Frequencia")
 {% endhighlight %}
 
-![plot of chunk unnamed-chunk-3](/knitr-jekyll-ad1figure/source/2017-07-05-postagem-prob1/unnamed-chunk-3-1.png)
+![plot of chunk unnamed-chunk-3](/knitr-jekyll-ad1/figure/source/2017-07-05-postagem-prob1/unnamed-chunk-3-1.png)
 
 Como a frequencia da classificacao 9 e maior entao espera-se que a mediana(9) e a media(8.891304) estejam neste entorno.
 
@@ -135,7 +135,7 @@ dados %>%  filter(series_name == "Sense8") %>%
   labs(title = "Box-plot da classificacao do usuario por temporada da serie", x="Temporada", y="Classificacao do usuario")
 {% endhighlight %}
 
-![plot of chunk unnamed-chunk-5](/knitr-jekyll-ad1figure/source/2017-07-05-postagem-prob1/unnamed-chunk-5-1.png)
+![plot of chunk unnamed-chunk-5](/knitr-jekyll-ad1/figure/source/2017-07-05-postagem-prob1/unnamed-chunk-5-1.png)
 
 Com o passar dos episodios da primeira temporada a classificacao so subiu. A classificacao da segunda temporada teve o mesmo comportamento estando com a classificacao ainda superior a da primeira temporada como podemos ver abaixo.
 
@@ -149,7 +149,7 @@ dados %>%  filter(series_name == "Sense8") %>%
   labs(title = "Distribuicao da classificacao ao longo das temporadas", x="Episodio da temporada", y="Classificacao do usuario")
 {% endhighlight %}
 
-![plot of chunk unnamed-chunk-6](/knitr-jekyll-ad1figure/source/2017-07-05-postagem-prob1/unnamed-chunk-6-1.png)
+![plot of chunk unnamed-chunk-6](/knitr-jekyll-ad1/figure/source/2017-07-05-postagem-prob1/unnamed-chunk-6-1.png)
 
 Podemos ainda verificar a existencia de uma correlacao entre o episodio da temporada e sua classificacao e podemos perceber que a mesma existe. Existe uma correlacao linear, aparentemente forte, entre essas duas variaveis, ou seja, o episodio da temporada influencia diretamente na classificacao do episodio e virse e versa.
 
@@ -182,7 +182,7 @@ dados %>%
   labs(title = "Distribuicao de votos do usuario", x="Nome da serie", y="Votos do usuario")
 {% endhighlight %}
 
-![plot of chunk unnamed-chunk-8](/knitr-jekyll-ad1figure/source/2017-07-05-postagem-prob1/unnamed-chunk-8-1.png)
+![plot of chunk unnamed-chunk-8](/knitr-jekyll-ad1/figure/source/2017-07-05-postagem-prob1/unnamed-chunk-8-1.png)
 
 Podemos perceber que segundo a distribuicao de votos dos usuarios para cada episodio da serie no grafico acima, Sense8 tem dois grupos de valores distintos(votos < 1000 e votos >= 2000). Quanto a mediana temos 2047 e a media 1562.043. O valor indicado para media e pouco represetativo da distribuicao de votos por causa dos grupos de valores dispersos.
 
@@ -217,7 +217,7 @@ dados %>%  filter(series_name == "Sense8") %>%
   labs(title = "Box-plot de votos do usuario por temporada da serie", x="Temporada", y="Votos do usuario")
 {% endhighlight %}
 
-![plot of chunk unnamed-chunk-10](/knitr-jekyll-ad1figure/source/2017-07-05-postagem-prob1/unnamed-chunk-10-1.png)
+![plot of chunk unnamed-chunk-10](/knitr-jekyll-ad1/figure/source/2017-07-05-postagem-prob1/unnamed-chunk-10-1.png)
 
 Com o passar dos episodios da primeira temporada o numero de votos so diminuiu. A primeira temporada teve seu pico de votos no primeiro episodio. O numero de votos da segunda temporada teve o mesmo comportamento estando com o numero de votos ainda inferior a da primeira temporada como podemos ver abaixo.
 
@@ -231,7 +231,7 @@ dados %>%  filter(series_name == "Sense8") %>%
   labs(title = "Distribuicao de votos ao longo das temporadas", x="Episodio da temporada", y="Votos do usuario")
 {% endhighlight %}
 
-![plot of chunk unnamed-chunk-11](/knitr-jekyll-ad1figure/source/2017-07-05-postagem-prob1/unnamed-chunk-11-1.png)
+![plot of chunk unnamed-chunk-11](/knitr-jekyll-ad1/figure/source/2017-07-05-postagem-prob1/unnamed-chunk-11-1.png)
 
 Podemos ainda verificar a existencia de uma fraca correlacao negativa entre o episodio da temporada e seu numero de votos.
 
@@ -264,7 +264,7 @@ dados %>%
   labs(title = "Distribuicao da classificacao do usuario", x="Nome da serie", y="Classificacao do usuario")
 {% endhighlight %}
 
-![plot of chunk unnamed-chunk-13](/knitr-jekyll-ad1figure/source/2017-07-05-postagem-prob1/unnamed-chunk-13-1.png)
+![plot of chunk unnamed-chunk-13](/knitr-jekyll-ad1/figure/source/2017-07-05-postagem-prob1/unnamed-chunk-13-1.png)
 
 Podemos perceber que segundo a classificacao de usuarios IMDB acima, Black Mirror tem apenas um valor estranho(~7.0). Existe variacao e dentre os valores frequentes temos as classificacoes de 8.0 e 8.5. Isto fica claro se observar-mos o histograma abaixo.
 
@@ -277,7 +277,7 @@ dados %>%
   labs(title = "Histograma da classificacao do usuario", x="Classificacao do usuario", y = "Frequencia")
 {% endhighlight %}
 
-![plot of chunk unnamed-chunk-14](/knitr-jekyll-ad1figure/source/2017-07-05-postagem-prob1/unnamed-chunk-14-1.png)
+![plot of chunk unnamed-chunk-14](/knitr-jekyll-ad1/figure/source/2017-07-05-postagem-prob1/unnamed-chunk-14-1.png)
 
 Como a frequencia da classificacao concentra-se em 8.0 e 8.5 entao espera-se que a mediana esteja neste entorno. Neste caso, houve a coincidencia da mediana e da media(8.3).
 
@@ -312,7 +312,7 @@ dados %>%  filter(series_name == "Black Mirror") %>%
   labs(title = "Box-plot da classificacao do usuario por temporada da serie", x="Temporada", y="Classificacao do usuario")
 {% endhighlight %}
 
-![plot of chunk unnamed-chunk-16](/knitr-jekyll-ad1figure/source/2017-07-05-postagem-prob1/unnamed-chunk-16-1.png)
+![plot of chunk unnamed-chunk-16](/knitr-jekyll-ad1/figure/source/2017-07-05-postagem-prob1/unnamed-chunk-16-1.png)
 
 Com o passar dos episodios de Black Mirror a unica temporada que a classificacao so subiu foi a primeira, enquanto que na segunda e terceira temporada vemos uma variacao da classificacao. Dentre as variacoes a temporada que mais teve queda na classificacao sendo a segunda temporada (o episodio 3 chegou a ter a classificacao mais baixa da serie) como podemos ver abaixo.
 
@@ -325,7 +325,7 @@ dados %>%  filter(series_name == "Black Mirror") %>%
 labs(title = "Distribuicao da classificacao ao longo das temporadas", x="Episodio da temporada", y="Classificacao do usuario")
 {% endhighlight %}
 
-![plot of chunk unnamed-chunk-17](/knitr-jekyll-ad1figure/source/2017-07-05-postagem-prob1/unnamed-chunk-17-1.png)
+![plot of chunk unnamed-chunk-17](/knitr-jekyll-ad1/figure/source/2017-07-05-postagem-prob1/unnamed-chunk-17-1.png)
 
 Quanto a correlacao entre o episodio da temporada e sua classificacao podemos perceber a existencia de uma correlacao linear, aparentemente forte, entre essas duas variaveis apenas na primeira temporada.
 
@@ -358,7 +358,7 @@ dados %>%
   labs(title = "Distribuicao de votos do usuario", x="Nome da serie", y="Votos do usuario")
 {% endhighlight %}
 
-![plot of chunk unnamed-chunk-19](/knitr-jekyll-ad1figure/source/2017-07-05-postagem-prob1/unnamed-chunk-19-1.png)
+![plot of chunk unnamed-chunk-19](/knitr-jekyll-ad1/figure/source/2017-07-05-postagem-prob1/unnamed-chunk-19-1.png)
 
 Podemos perceber que segundo a distribuicao de votos dos usuarios do IMDB acima, Black Mirror tem votos dispersos. Em termos de media temos 12336.62 e de mediana 11844.
 
@@ -393,7 +393,7 @@ dados %>%  filter(series_name == "Black Mirror") %>%
   labs(title = "Box-plot de votos do usuario por temporada da serie", x="Temporada", y="Votos do usuario")
 {% endhighlight %}
 
-![plot of chunk unnamed-chunk-21](/knitr-jekyll-ad1figure/source/2017-07-05-postagem-prob1/unnamed-chunk-21-1.png)
+![plot of chunk unnamed-chunk-21](/knitr-jekyll-ad1/figure/source/2017-07-05-postagem-prob1/unnamed-chunk-21-1.png)
 
 Com o passar dos episodios de Black Mirror a unica temporada que manteve o numero de votos foi a primeira(episodios 1 a 2), enquanto que na segunda e terceira temporada vemos uma variacao do numero de votos. Dentre as variacoes a temporada que mais teve queda no numero de votos sendo a terceira temporada (o episodio 5 chegou a ter o menor numero de votos da serie) como podemos ver abaixo.
 
@@ -406,7 +406,7 @@ dados %>%  filter(series_name == "Black Mirror") %>%
   labs(title = "Distribuicao de votos ao longo das temporadas", x="Episodio da temporada", y="Votos do usuario")
 {% endhighlight %}
 
-![plot of chunk unnamed-chunk-22](/knitr-jekyll-ad1figure/source/2017-07-05-postagem-prob1/unnamed-chunk-22-1.png)
+![plot of chunk unnamed-chunk-22](/knitr-jekyll-ad1/figure/source/2017-07-05-postagem-prob1/unnamed-chunk-22-1.png)
 
 Quanto a correlacao entre o episodio da temporada e seu numero de votos podemos perceber a existencia de uma correlacao linear negativa, aparentemente forte, entre essas duas variaveis apenas na primeira temporada.
 
@@ -440,7 +440,7 @@ dados %>%
   labs(title = "Distribuicao da classificacao do usuario", x="Nome da serie", y="Classificacao do usuario")
 {% endhighlight %}
 
-![plot of chunk unnamed-chunk-24](/knitr-jekyll-ad1figure/source/2017-07-05-postagem-prob1/unnamed-chunk-24-1.png)
+![plot of chunk unnamed-chunk-24](/knitr-jekyll-ad1/figure/source/2017-07-05-postagem-prob1/unnamed-chunk-24-1.png)
 
 Podemos perceber que segundo a classificacao de usuarios IMDB acima, 13 Reasons Why nao possui valores estranhos. Existe pouca variacao se comparado as series Sense8 e Black Mirror e dentre os valores frequentes temos as classificacoes de 8.5. Isto fica ainda mais claro no histograma abaixo.
 
@@ -453,7 +453,7 @@ dados %>%
   labs(title = "Histograma da classificacao do usuario", x="Classificacao do usuario", y = "Frequencia")
 {% endhighlight %}
 
-![plot of chunk unnamed-chunk-25](/knitr-jekyll-ad1figure/source/2017-07-05-postagem-prob1/unnamed-chunk-25-1.png)
+![plot of chunk unnamed-chunk-25](/knitr-jekyll-ad1/figure/source/2017-07-05-postagem-prob1/unnamed-chunk-25-1.png)
 
 Como a frequencia da classificacao concentra-se em 8.5 entao espera-se que a mediana esteja neste entorno. Neste caso, quase houve a coincidencia da mediana(8.5) e da media(8.669231).
 
@@ -488,7 +488,7 @@ dados %>%  filter(series_name == "13 Reasons Why") %>%
   labs(title = "Box-plot da classificacao do usuario por temporada da serie", x="Temporada", y="Classificacao do usuario")
 {% endhighlight %}
 
-![plot of chunk unnamed-chunk-27](/knitr-jekyll-ad1figure/source/2017-07-05-postagem-prob1/unnamed-chunk-27-1.png)
+![plot of chunk unnamed-chunk-27](/knitr-jekyll-ad1/figure/source/2017-07-05-postagem-prob1/unnamed-chunk-27-1.png)
 
 Com o passar dos episodios de 13 Reasons Why da primeira temporada a classificacao mais baixa foi registrada antes do episodio 5 como podemos ver no grafico abaixo.
 
@@ -501,7 +501,7 @@ dados %>%  filter(series_name == "13 Reasons Why") %>%
   labs(title = "Distribuicao da classificacao ao longo da temporada", x="Episodio da temporada", y="Classificacao do usuario")
 {% endhighlight %}
 
-![plot of chunk unnamed-chunk-28](/knitr-jekyll-ad1figure/source/2017-07-05-postagem-prob1/unnamed-chunk-28-1.png)
+![plot of chunk unnamed-chunk-28](/knitr-jekyll-ad1/figure/source/2017-07-05-postagem-prob1/unnamed-chunk-28-1.png)
 
 Quanto a correlacao entre o episodio da temporada e sua classificacao podemos perceber a existencia de uma correlacao linear aparentemente forte(~1).
 
@@ -532,7 +532,7 @@ dados %>%
 labs(title = "Distribuicao de votos do usuario", x="Nome da serie", y="Votos do usuario")
 {% endhighlight %}
 
-![plot of chunk unnamed-chunk-30](/knitr-jekyll-ad1figure/source/2017-07-05-postagem-prob1/unnamed-chunk-30-1.png)
+![plot of chunk unnamed-chunk-30](/knitr-jekyll-ad1/figure/source/2017-07-05-postagem-prob1/unnamed-chunk-30-1.png)
 
 Podemos perceber que segundo a distribuicao de votos dos usuarios do IMDB acima, 13 Reasons Why possui valores estranhos(>3500). Existe variacao tanto quanto se comparado as series Sense8 e Black Mirror. Como a frequencia da votos concentra-se entorno de 2500 entao espera-se que a media e a mediana esteja neste entorno. Neste caso, a mediana e de 2445 e a media 2632.923.
 
@@ -567,7 +567,7 @@ dados %>%  filter(series_name == "13 Reasons Why") %>%
   labs(title = "Box-plot de votos do usuario por temporada da serie", x="Temporada", y="Votos do usuario")
 {% endhighlight %}
 
-![plot of chunk unnamed-chunk-32](/knitr-jekyll-ad1figure/source/2017-07-05-postagem-prob1/unnamed-chunk-32-1.png)
+![plot of chunk unnamed-chunk-32](/knitr-jekyll-ad1/figure/source/2017-07-05-postagem-prob1/unnamed-chunk-32-1.png)
 
 Com o passar dos episodios de 13 Reasons Why da primeira temporada o episodio com menor numero de votos foi registrado no episodio 8. Felizmente, logo apos o episodio 12 e registrado o maior numero de votos da serie como podemos ver no grafico abaixo.
 
@@ -580,7 +580,7 @@ dados %>%  filter(series_name == "13 Reasons Why") %>%
   labs(title = "Distribuicao de votos ao longo das temporadas", x="Episodio da temporada", y="Votos do usuario")
 {% endhighlight %}
 
-![plot of chunk unnamed-chunk-33](/knitr-jekyll-ad1figure/source/2017-07-05-postagem-prob1/unnamed-chunk-33-1.png)
+![plot of chunk unnamed-chunk-33](/knitr-jekyll-ad1/figure/source/2017-07-05-postagem-prob1/unnamed-chunk-33-1.png)
 
 Quanto a correlacao entre o episodio da temporada e seu numero de votos podemos perceber a desistencia de uma correlacao linear  forte.
 
@@ -615,7 +615,7 @@ dados %>%
   labs(title = "Distribuicao de votos do usuario", x="Nome da serie", y="Votos do usuario")
 {% endhighlight %}
 
-![plot of chunk unnamed-chunk-35](/knitr-jekyll-ad1figure/source/2017-07-05-postagem-prob1/unnamed-chunk-35-1.png)
+![plot of chunk unnamed-chunk-35](/knitr-jekyll-ad1/figure/source/2017-07-05-postagem-prob1/unnamed-chunk-35-1.png)
 
 Para observar melhor qual delas e mais bem votada segundo os votos do usuario vamos olhar para o grafico de box plot de cada uma das series.
 
@@ -627,7 +627,7 @@ dados %>%
   labs(title = "Box-plot de votos do usuario por serie", x="Nome da serie", y="Votos do usuario")
 {% endhighlight %}
 
-![plot of chunk unnamed-chunk-36](/knitr-jekyll-ad1figure/source/2017-07-05-postagem-prob1/unnamed-chunk-36-1.png)
+![plot of chunk unnamed-chunk-36](/knitr-jekyll-ad1/figure/source/2017-07-05-postagem-prob1/unnamed-chunk-36-1.png)
 
 Olhando para o grafico acima e utilizando a mediana como metrica de comparacao entre as series, fica claro que Black Mirror e a serie mais bem votada e a menos votada fica sendo Sense 8(por uma diferenca muito pequena com relacao a 13 Reasons Why). A mediana e uma boa metrica porque ajuda a perceber onde fica a maior concentracao de votos do usuario diminuindo o vies de outliers. Neste caso em particular, independente de ser utilizado a metrica mediana ou media os resultados iriam ser os mesmos.
 
@@ -673,7 +673,7 @@ dados %>%  filter(series_name == "Sense8") %>%
   labs(title = "Distribuicao da classificacao ao longo das temporadas", x="Episodio da temporada", y="Classificacao do usuario")
 {% endhighlight %}
 
-![plot of chunk unnamed-chunk-38](/knitr-jekyll-ad1figure/source/2017-07-05-postagem-prob1/unnamed-chunk-38-1.png)
+![plot of chunk unnamed-chunk-38](/knitr-jekyll-ad1/figure/source/2017-07-05-postagem-prob1/unnamed-chunk-38-1.png)
 
 O episodio de Black Mirror mais bem avaliado foi o episodios 4 da segunda temporada e o menos avaliado foi o episodio 3 da mesma temporada como podemos ver no grafico abaixo. Quanto a diferenca pode-se dizer que e grande, o episodio 4 teve avaliacao superior a 9.0 enquanto o episodio 3 teve avaliacao 7.0(diferenca de pelo menos 2 pontos). 
 
@@ -686,7 +686,7 @@ dados %>%  filter(series_name == "Black Mirror") %>%
 labs(title = "Distribuicao da classificacao ao longo das temporadas", x="Episodio da temporada", y="Classificacao do usuario")
 {% endhighlight %}
 
-![plot of chunk unnamed-chunk-39](/knitr-jekyll-ad1figure/source/2017-07-05-postagem-prob1/unnamed-chunk-39-1.png)
+![plot of chunk unnamed-chunk-39](/knitr-jekyll-ad1/figure/source/2017-07-05-postagem-prob1/unnamed-chunk-39-1.png)
 
 O episodio de 13 Reasons Why mais bem avaliados foi o episodios 13 da primeira temporada e o menos avaliado foi o episodio 3 da mesma temporada como podemos ver no grafico abaixo. Quanto a diferenca pode-se dizer que a diferenca razoavelmente grande, o episodio 13 teve avaliacao proxima a 10 enquanto o episodio 3 teve avaliacao proxima de 8.2(diferenca de quase 2 pontos). 
 
@@ -699,7 +699,7 @@ dados %>%  filter(series_name == "13 Reasons Why") %>%
   labs(title = "Distribuicao da classificacao ao longo da temporada", x="Episodio da temporada", y="Classificacao do usuario")
 {% endhighlight %}
 
-![plot of chunk unnamed-chunk-40](/knitr-jekyll-ad1figure/source/2017-07-05-postagem-prob1/unnamed-chunk-40-1.png)
+![plot of chunk unnamed-chunk-40](/knitr-jekyll-ad1/figure/source/2017-07-05-postagem-prob1/unnamed-chunk-40-1.png)
 
 Conclusao: Como podemos ver o primeiro episodio de cada uma das series nao e o mais bem avaliado e apenas as series 13 Reasons Why e Black Mirror tiveram o episodio menos bem avaliado no decorrer da temporada.
 
@@ -723,7 +723,7 @@ dados %>%
   theme(plot.title = element_text(hjust = 0.5))
 {% endhighlight %}
 
-![plot of chunk unnamed-chunk-41](/knitr-jekyll-ad1figure/source/2017-07-05-postagem-prob1/unnamed-chunk-41-1.png)
+![plot of chunk unnamed-chunk-41](/knitr-jekyll-ad1/figure/source/2017-07-05-postagem-prob1/unnamed-chunk-41-1.png)
 
 Olhando para o grafico acima fica facil observar se a avaliacao dos episodios da nova temporada cresce ou decresce quando comparados a temporada anterior. Black Mirror apresenta uma variacao da avaliacao dos episodios com o passar das temporadas mas fica dificil afirmar com precisao se a avaliacao dos episodios cresceu ou decresceu.
 
@@ -737,7 +737,7 @@ dados %>%  filter(series_name == "Black Mirror") %>%
   labs(title = "Box-plot da classificacao do usuario por temporada da serie", x="Temporada", y="Classificacao do usuario")
 {% endhighlight %}
 
-![plot of chunk unnamed-chunk-42](/knitr-jekyll-ad1figure/source/2017-07-05-postagem-prob1/unnamed-chunk-42-1.png)
+![plot of chunk unnamed-chunk-42](/knitr-jekyll-ad1/figure/source/2017-07-05-postagem-prob1/unnamed-chunk-42-1.png)
 
 Observando o grafico acima fica facil perceber como se comporta a avaliacao dos episodios com o passar das temporadas de Black Mirror. Percebe-se claramente que a serie mantem a avaliacao dos episodios se utilizamos a mediana para comparar cada temporada. Ou seja, a serie manteve a avaliacao dos episodios.
 
@@ -749,7 +749,7 @@ dados %>%  filter(series_name == "Sense8") %>%
   labs(title = "Box-plot da classificacao do usuario por temporada da serie", x="Temporada", y="Classificacao do usuario")
 {% endhighlight %}
 
-![plot of chunk unnamed-chunk-43](/knitr-jekyll-ad1figure/source/2017-07-05-postagem-prob1/unnamed-chunk-43-1.png)
+![plot of chunk unnamed-chunk-43](/knitr-jekyll-ad1/figure/source/2017-07-05-postagem-prob1/unnamed-chunk-43-1.png)
 
 Observando o grafico acima fica facil perceber como se comporta a avaliacao dos episodios com o passar das temporadas de Sense8. Percebe-se claramente o crescimento da avaliacao dos episodios se utilizamos a mediana para comparar cada temporada. Ou seja, houve um crescimento da avaliacao dos episodios.
 

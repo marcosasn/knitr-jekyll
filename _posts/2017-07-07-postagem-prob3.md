@@ -149,7 +149,7 @@ dist_avaliacao = filmes %>%
 ggplotly(dist_avaliacao)
 {% endhighlight %}
 
-![plot of chunk unnamed-chunk-1](/knitr-jekyll-ad1figure/source/2017-07-07-postagem-prob3/unnamed-chunk-1-1.png)
+![plot of chunk unnamed-chunk-1](/knitr-jekyll-ad1/figure/source/2017-07-07-postagem-prob3/unnamed-chunk-1-1.png)
 
 Observando as avaliações dos filmes podemos observar uma tendência de grupos. Esses grupos ficam ainda mais evidentes quando geramos o gráfico de contagem de frequência de cada avaliação (vide abaixo). As avaliações mais próximas poderiam sugerir os grupos e os gaps os delimitadores entre cada um deles.
 
@@ -162,7 +162,7 @@ filmes %>%
   theme(plot.title = element_text(hjust = 0.5))
 {% endhighlight %}
 
-![plot of chunk unnamed-chunk-2](/knitr-jekyll-ad1figure/source/2017-07-07-postagem-prob3/unnamed-chunk-2-1.png)
+![plot of chunk unnamed-chunk-2](/knitr-jekyll-ad1/figure/source/2017-07-07-postagem-prob3/unnamed-chunk-2-1.png)
 
 Veja como se comporta a distribuição da renda de cada filme da atriz.
 
@@ -175,7 +175,7 @@ dist_renda = filmes %>%
 ggplotly(dist_renda)
 {% endhighlight %}
 
-![plot of chunk unnamed-chunk-3](/knitr-jekyll-ad1figure/source/2017-07-07-postagem-prob3/unnamed-chunk-3-1.png)
+![plot of chunk unnamed-chunk-3](/knitr-jekyll-ad1/figure/source/2017-07-07-postagem-prob3/unnamed-chunk-3-1.png)
 
 Podemos ver uma estrutura de grupo de filmes bem próximos quanto ao sucesso de público. O maior grupo define os filmes com bilheteria inferior a 40 milhões de dólares. Ainda sobre a bilheteria podemos observar se os valores de bilheteria são frequentes.
 
@@ -188,7 +188,7 @@ filmes %>%
   theme(plot.title = element_text(hjust = 0.5))
 {% endhighlight %}
 
-![plot of chunk unnamed-chunk-4](/knitr-jekyll-ad1figure/source/2017-07-07-postagem-prob3/unnamed-chunk-4-1.png)
+![plot of chunk unnamed-chunk-4](/knitr-jekyll-ad1/figure/source/2017-07-07-postagem-prob3/unnamed-chunk-4-1.png)
 
 Quanto a frequência de bilheterias comuns observamos que a maioria dos valores de bilheteria são distintos e existem poucos valores duplicados. Poderia ser interessante analisar o comportamento da distribuição de bilheteria dos filmes em uma outra escala já que a maior concentração de valores de bilheteria impede uma melhor visualização da real magnitude dos valores.
 
@@ -202,7 +202,7 @@ dist_renda_logscale = filmes %>%
 ggplotly(dist_renda_logscale)
 {% endhighlight %}
 
-![plot of chunk unnamed-chunk-5](/knitr-jekyll-ad1figure/source/2017-07-07-postagem-prob3/unnamed-chunk-5-1.png)
+![plot of chunk unnamed-chunk-5](/knitr-jekyll-ad1/figure/source/2017-07-07-postagem-prob3/unnamed-chunk-5-1.png)
 
 Um valor de bilheteria que anteriormente parecia fazer parte de um grupo majoritário de valores contém o menor valor de bilheteria. Isso fica ainda mais evidente se olharmos o gráfico de histograma abaixo para a contagem de frequência de bilheteria de cada filme na escala logarítimica.
 
@@ -216,7 +216,7 @@ filmes %>%
   theme(plot.title = element_text(hjust = 0.5))
 {% endhighlight %}
 
-![plot of chunk unnamed-chunk-6](/knitr-jekyll-ad1figure/source/2017-07-07-postagem-prob3/unnamed-chunk-6-1.png)
+![plot of chunk unnamed-chunk-6](/knitr-jekyll-ad1/figure/source/2017-07-07-postagem-prob3/unnamed-chunk-6-1.png)
 
 # Agrupamento com duas dimensões
 
@@ -233,7 +233,7 @@ dist_avaliacao_renda = filmes %>%
 ggplotly(dist_avaliacao_renda)
 {% endhighlight %}
 
-![plot of chunk unnamed-chunk-7](/knitr-jekyll-ad1figure/source/2017-07-07-postagem-prob3/unnamed-chunk-7-1.png)
+![plot of chunk unnamed-chunk-7](/knitr-jekyll-ad1/figure/source/2017-07-07-postagem-prob3/unnamed-chunk-7-1.png)
 
 Quais seriam os possíveis grupos para esta distribuição bidimensional?
 
@@ -258,7 +258,7 @@ ggdendrogram(agrupamento_h_2d, rotate = TRUE) +
   geom_hline(yintercept = 30, colour = "red")
 {% endhighlight %}
 
-![plot of chunk unnamed-chunk-8](/knitr-jekyll-ad1figure/source/2017-07-07-postagem-prob3/unnamed-chunk-8-1.png)
+![plot of chunk unnamed-chunk-8](/knitr-jekyll-ad1/figure/source/2017-07-07-postagem-prob3/unnamed-chunk-8-1.png)
 
 Observando o gráfico do dendrograma acima fica apropriado escolher 4 grupos já que os mesmos vão conter filmes menos distintos e mais característicos daquele grupo no qual estão inseridos. Como ficariam dispostos os nossos grupos de filmes?
 
@@ -276,7 +276,7 @@ plota_hclusts_2d(agrupamento_h_2d,
 ## character
 {% endhighlight %}
 
-![plot of chunk unnamed-chunk-9](/knitr-jekyll-ad1figure/source/2017-07-07-postagem-prob3/unnamed-chunk-9-1.png)
+![plot of chunk unnamed-chunk-9](/knitr-jekyll-ad1/figure/source/2017-07-07-postagem-prob3/unnamed-chunk-9-1.png)
 
 Escolhendo 4 grupos esta escolha agruparia filmes característicos do grupo no qual estariam inseridos?
 
@@ -299,7 +299,7 @@ distancias = filmes %>%
 plot(silhouette(cutree(agrupamento_h_2d, k = 4), distancias))
 {% endhighlight %}
 
-![plot of chunk unnamed-chunk-10](/knitr-jekyll-ad1figure/source/2017-07-07-postagem-prob3/unnamed-chunk-10-1.png)
+![plot of chunk unnamed-chunk-10](/knitr-jekyll-ad1/figure/source/2017-07-07-postagem-prob3/unnamed-chunk-10-1.png)
 
 Observando o gráfico acima parece que sim porque cada grupo contém filmes característicos daquele grupo.
 
@@ -320,7 +320,7 @@ dist_avaliacao_renda = filmes %>%
 ggplotly(dist_avaliacao_renda)
 {% endhighlight %}
 
-![plot of chunk unnamed-chunk-11](/knitr-jekyll-ad1figure/source/2017-07-07-postagem-prob3/unnamed-chunk-11-1.png)
+![plot of chunk unnamed-chunk-11](/knitr-jekyll-ad1/figure/source/2017-07-07-postagem-prob3/unnamed-chunk-11-1.png)
 
 Quais seriam os possíveis grupos para esta distribuição bidimensional se as variáveis fossem normalizadas e o eixo de bilheteria fosse transformado para a escala logarítimica?
 
@@ -346,7 +346,7 @@ agrupamento_h_2d = filmes %>%
 ggdendrogram(agrupamento_h_2d, rotate = TRUE)
 {% endhighlight %}
 
-![plot of chunk unnamed-chunk-12](/knitr-jekyll-ad1figure/source/2017-07-07-postagem-prob3/unnamed-chunk-12-1.png)
+![plot of chunk unnamed-chunk-12](/knitr-jekyll-ad1/figure/source/2017-07-07-postagem-prob3/unnamed-chunk-12-1.png)
 
 {% highlight r %}
 filmes2 = filmes %>% mutate(`BOX OFFICE` = log10(`BOX OFFICE`))
@@ -363,7 +363,7 @@ ggplotly(plota_hclusts_2d(agrupamento_h_2d,
 ## character
 {% endhighlight %}
 
-![plot of chunk unnamed-chunk-12](/knitr-jekyll-ad1figure/source/2017-07-07-postagem-prob3/unnamed-chunk-12-2.png)
+![plot of chunk unnamed-chunk-12](/knitr-jekyll-ad1/figure/source/2017-07-07-postagem-prob3/unnamed-chunk-12-2.png)
 
 Escolhendo 4 grupos esta escolha ainda agruparia filmes característicos do grupo no qual estariam inseridos?
 
@@ -378,7 +378,7 @@ distancias = filmes %>%
 plot(silhouette(cutree(agrupamento_h_2d, k = 4), distancias))
 {% endhighlight %}
 
-![plot of chunk unnamed-chunk-13](/knitr-jekyll-ad1figure/source/2017-07-07-postagem-prob3/unnamed-chunk-13-1.png)
+![plot of chunk unnamed-chunk-13](/knitr-jekyll-ad1/figure/source/2017-07-07-postagem-prob3/unnamed-chunk-13-1.png)
 
 Observando o gráfico acima parece que esta escolha agrupa um filme em um agrupamento que não lhe caracteriza tão bem embora isso não vá fazer tanta diferença e impactar tanto na análise.
 
