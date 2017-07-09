@@ -2,7 +2,7 @@
 layout: post
 title: "Tipos de filme de Hollywood quanto ao gênero"
 author: Marcos Antonio Silva Nascimento (marcos.nascimento@ccc.ufcg.edu.br)
-date: 2017-07-07 17:51:03
+date: 2017-07-09 08:01:03
 published: true
 tags: [htmlwidgets, r]
 ---
@@ -127,7 +127,8 @@ library(magrittr)
 {% highlight r %}
 theme_set(theme_bw())
 {% endhighlight %}
-#Tipos de filme quanto ao gênero do personagem e da quantidade de palavras que eles falam 
+# Tipos de filme quanto ao gênero do personagem e da quantidade de palavras que eles falam 
+
 Neste post vamos investigar a existência de tipos de filmes quanto ao gênero do personagem e da quantidade de palavras que ele fala. Esta investigação vai ajudar as pessoas a se confrontarem com o que se conhece popularmente a respeito de filmes voltados para o público feminino e os filmes do gênero de terror, por exemplo. Será que os filmes femininos o número de personagens é predominantemente feito de mulheres? Será que elas falam em maior quantidade que os homens? Será que existem grupos que definem comportamentos comuns para os filmes analisados? Utilizaremos os dados cedidos pelo Github. [Github](https://github.com/matthewfdaniels/scripts).
 
 
@@ -184,7 +185,7 @@ dados = dados %>%
 dados = dados %>%
   subset(select = -c(script_id,imdb_id,year,gross))
 {% endhighlight %}
-##Decisões sobre filtrar dados ou variáveis 
+## Decisões sobre filtrar dados ou variáveis 
 
 Observando os dados cedidos pelo repositório pude notar que o valor da variável idade, da tabela de personagens, não estava disponível ou continha valor nulo. Desta forma foi feita a filtragem dessas observações. A variável renda da tabela dos filmes tinha comportamento semelhente. Algumas observações continha valor não disponível ou então igual a zero, desta forma, eu achei que seria prudente filtra-los uma vez que, filmes sem valor de renda ou com valor de renda igual a zero não seriam relavantes na análise.
 
@@ -192,17 +193,17 @@ Uma limitação encontrada durante a análise foi o fato de alguns filmes possui
 
 Esta análise só levará em consideração os filmes que contenham mais de um personagem de cada gênero.
 
-##As dimensões submetidas a análise 
+## As dimensões submetidas a análise 
 
 As dimensões submetidas a análise foram 4 variáveis numéricas calculadas a partir do conjunto de dados cedido pelo Github mencionado acima. São elas: **nº de personagens do sexo feminino no filme**, **mediana de palavras dos personagens do sexo feminino no filme**, **nº de personagens do sexo masculino no filme** e **mediana de palavras dos personagens do sexo masculino no filme**.
 
 O conjunto de dados submetido a análise contém, para cada filme, uma observação com valores para cada variável mencionada acima. A escolha das variáveis acima visava obter a resposta para a seguinte pergunta: visando o gênero do personagem e a quantidade de palavras ditas por ele em um filme, quais os tipos de filmes? Filmes em que as mulheres são protagonistas? Filmes em que os homens são protagonistas?
 
-##Sumário e descrição dos dados 
+## Sumário e descrição dos dados 
 
 Vamos primeiramente olhar para o gráfico abaixo, veja como se comporta a distribuição de cada dimensão dos dados.
 
-###Dados brutos
+### Dados brutos
 
 {% highlight r %}
 dw = dados
@@ -240,7 +241,7 @@ summary(select(dw, -title))
 ##  3rd Qu.: 4.000   3rd Qu.: 924.5   3rd Qu.: 8.000   3rd Qu.: 882.0  
 ##  Max.   :14.000   Max.   :7664.0   Max.   :23.000   Max.   :5240.0
 {% endhighlight %}
-###Dados em escala de log
+### Dados em escala de log
 
 Como foi dito na seção anterior, é aconselhável observar a distruibuição de cada uma das dimensões na escala logarítmica para observar melhor a magnitude dos valores que se enviesam ou se concentram à esquerda do gráfico.
 
@@ -280,7 +281,7 @@ summary(select(dw2, -title))
 ##  Max.   :2.6391   Max.   :8.944   Max.   :3.1355   Max.   :8.564
 {% endhighlight %}
 
-###Dados padronizados
+### Dados padronizados
 
 Depois de analisar os dados brutos e na escala logarítmica é chegada a hora de ver como se comporta a distribuição dos dados padronizados ou normalizados.
 
@@ -327,9 +328,9 @@ summary(select(dw2.scaled, -title))
 ##  Max.   : 3.3327
 {% endhighlight %}
 
-#O agrupamento multidimensional utilizado o algoritmo k-means
+# O agrupamento multidimensional utilizado o algoritmo k-means
 
-##Escolhendo o valor de k
+## Escolhendo o valor de k
 
 Antes de realizar o agrupamento precisamos escolher um bom valor para k (basicamente indica o número de grupos ou tipos que iremos identificar no conjunto de dados). Uma medida comumente usada no k-means é comparar a distância (quadrática) entre o centro dos clusters e o centro dos dados com a distância (quadrática) entre todos os pontos nos dados e o centro dos dados.
 
@@ -388,7 +389,7 @@ explorando_k %>%
 
 Observando o gráfico acima fica fácil perceber que o melhor valor de k seria 4, já que, apartir de 4 betweenss começa a parar de crescer. O ponto k=4 é também conhecido como joelho da curva.
 
-##Agrupando os dados
+## Agrupando os dados
 
 {% highlight r %}
 # O agrupamento de fato:
@@ -429,7 +430,7 @@ dists = dw2.scaled %>%
 
 Observando o gráfico acima e olhando a direção em que as linhas dos filmes cruzam e tocam cada uma das variáveis ou coordenadas podemos observar grupos que caracterizam os filmes que ali cabem.
 
-##Descrição e interpretação dos grupos
+## Descrição e interpretação dos grupos
 
 Observando os agrupamentos do gráfico de coordenadas paralelas acima vamos interpretar cada um deles logo abaixo.
 

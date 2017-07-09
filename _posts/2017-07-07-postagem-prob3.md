@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Tipos de filme de Lindsay Lohan"
-date: 2017-07-07 16:50:03
+date: 2017-07-09 08:09:01
 published: true
 tags: [htmlwidgets, r]
 author: Marcos Antonio Silva Nascimento (marcos.nascimento@ccc.ufcg.edu.br)
@@ -220,7 +220,7 @@ filmes %>%
 
 # Agrupamento com duas dimensões
 
-##Sem normalização e sem transformação
+## Sem normalização e sem transformação
 
 Podemos perceber pela descrição das variáveis que a crítica e a bilheteria já tendenciam a estrutura de grupos mas como ficaria o gráfico de distribuição dessas duas variáveis?
 
@@ -303,7 +303,7 @@ plot(silhouette(cutree(agrupamento_h_2d, k = 4), distancias))
 
 Observando o gráfico acima parece que sim porque cada grupo contém filmes característicos daquele grupo.
 
-##Com normalização e com transformação
+## Com normalização e com transformação
 Na seção anterior não fizemos normalização ou padronização dos dados antes de reuni-los em clusters, isto seria adequado? Seria certo ou justo comparar variáveis de escalas divergentes e afirmar algo sensato? Você certamente deve estar ciente que não.
 
 A técnica de transformação não foi aplicada na seção anterior. Seria apropriado afirmar algo sobre grupos de valores em um gráfico sem observar como o mesmo se comporta em uma outra escala? A resposta mais sensata também seria não. Na seção de descrição das variáveis notamos que um filme que teve a pior bilheteria não foi distinto de um grupo com valores de bilheterias maiores. Como levar isso em consideração? 

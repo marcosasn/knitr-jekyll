@@ -41,6 +41,7 @@ p = dados %>%
   theme(plot.title = element_text(hjust = 0.5), legend.position="none")
 ggplotly(p, tooltip = "text")
 ```
+
 Black Mirror apresenta uma variação considerável da avaliação dos episódios se comparada a série Sense8, além disso, esta também apresenta uma curva crescente.
 
 Precisamente a avaliação dos episódios cresceu ou decresceu ao longo de cada temporada? 
@@ -56,6 +57,8 @@ q = dados %>%
   theme(plot.title = element_text(hjust = 0.5))
 ggplotly(q, tooltip = "text")
 ```
+
+
 Utilizando a mediana como métrica de comparação percebe-se claramente que Black Mirror mantém a avaliação dos episódios(variação em termos de décimos). Percebe-se também o crescimento da avaliação dos episódios de Sense8.
 
 Podemos concluir que a avaliação dos episódios das novas temporadas de Black Mirror foi mantida enquanto a avaliação dos episódios da nova temporada de Sense8 foi acrescida.
